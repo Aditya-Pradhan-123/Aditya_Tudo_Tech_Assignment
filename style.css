@@ -1,0 +1,1473 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ------------------Navbar----------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001435;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.19deg, #001435 0.15%, #023384 98.45%);
+    position: fixed;
+    z-index:999;
+}
+.navbar .menu{
+    display: none;
+}
+.navbar .close{
+    display: none;
+}
+.navbar-container{
+    padding: 10px 0px;
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-container ul li{
+    padding-left: 4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 14px;
+}
+.navbar-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-container ul li a.active{
+    color: #14BBEA;
+}
+.navbar-container ul button{
+    margin-left: 4em;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #14BBEA 0%, #009DC9 100%);
+    border: none;
+   
+    cursor: pointer;
+}
+.navbar-container ul button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------Home==================== */
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90.19deg, #001435 0.15%, #023384 98.45%);
+}
+.home-container{
+    width: 87%;
+    font-family: 'Raleway', sans-serif;
+}
+.home-container h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #14BBEA;
+}
+.home-container h1{
+    font-size: 60px;
+    color: white;
+}
+.home-container h1 span{
+    color: #F0AB00;
+}
+
+/* ---------------About Us----------------- */
+
+.about{
+    width: 100%;
+    height: 100vh auto;
+    background-color: #001435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-header{
+    margin-top: 8em;
+    text-align: center;
+}
+.about .about-header h3{
+    font-family: 'Raleway';
+    color: white;
+    font-size: 17px;
+}
+.about .about-header h1{
+    font-family: 'Raleway';
+    color: white;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.about .about-header h1 span{
+    color: #14BBEA;
+    font-weight: 700;
+}
+.about .about-header p{
+    font-family: 'Raleway';
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.about h2{
+    color: white;
+    margin: 3em 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+.about-cards{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.about-cards .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 278px;
+    height: 386px;
+    background-color: white;
+    border-radius: 19px;
+   
+}
+.about-cards .card .card-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.about-cards .card .card-container h1{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Raleway';
+    margin: 10px 0px;
+}
+.about-cards .card .card-container p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.about-cards .card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 278px;
+    height: 386px;
+    background-color: black;
+    color: white;
+    border-radius: 19px;
+}
+.about-cards .card2 .card-container{
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-cards .card2 .card-container h1{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Raleway';
+    margin: 10px 0px;
+}
+.about-cards .card2 .card-container p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* --------------Services------------------ */
+
+.services{
+    width: 100%;
+    height: 100vh auto;
+    background-color: #001435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-header{
+    margin-top: 8em;
+    text-align: center;
+}
+.services .services-header h3{
+    font-family: 'Raleway';
+    color: white;
+    font-size: 17px;
+}
+.services .services-header h1{
+    font-family: 'Raleway';
+    color: white;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.services .services-header h1 span{
+    color: #14BBEA;
+    font-weight: 700;
+}
+.services .services-header p{
+    font-family: 'Raleway';
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.service-container{
+    width: 70%;
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.strategy-header{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway';
+    margin-bottom: 3em;
+    
+}
+.strategy-header span{
+    color: #F0AB00;
+
+}
+.service-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-cards .HBA-card{
+    width: 248px;
+    height: 330px;
+    background-color: black;
+    border-radius: 19px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+.service-cards .HBA-card .HBA-card-container{
+    width: 70%;
+}
+.HBA-card-container img{
+    margin-left: 1em;
+}
+.HBA-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.HBA-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+}
+.service-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.service-card-container .CR-card{
+    width: 357px;
+    height: 196px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 4px 22px 0px #00000040;
+}
+
+.service-cards .CR-card .CR-card-container{
+    width: 80%;
+}
+
+.CR-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.CR-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+}
+
+
+.service-card-container .GTMA-card{
+    width: 357px;
+    height: 196px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.service-cards .GTMA-card .GTMA-card-container{
+    width: 80%; 
+}
+
+.GTMA-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.GTMA-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+}
+
+
+
+.service-container2{
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 2.5em;
+    display: flex;
+    justify-content: center
+}
+.service-container2 .FOA-card{
+    width: 248px;
+    height: 330px;
+    background-color: white;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.service-container2 .FOA-card .FOA-card-container{
+    width: 70%; 
+}
+
+.FOA-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.FOA-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+    color: #CCCCCC;
+
+}
+
+.service-container2 .NMOA-card{
+    width: 357px;
+    height: 196px;
+    background-color: #fff;
+    margin: 0px 20px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+.service-container2 .NMOA-card .NMOA-card-container{
+    width: 80%; 
+}
+
+.NMOA-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.NMOA-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+    color: #CCCCCC;
+
+}
+.service-container2 .MMA-card{
+    width: 248px;
+    height: 330px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+.service-container2 .MMA-card .MMA-card-container{
+    width: 70%; 
+}
+
+.MMA-card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.MMA-card-container p{
+    font-family: 'Open Sans';
+    font-size: 11px;
+    color: #CCCCCC;
+}
+
+.Corporate{
+    margin-top: 4em;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.corporate-header{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+}
+.corporate-header h1 span{
+    color: #F0AB00;
+}
+.corporate-list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.corporate-list .list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto';
+}
+.corporate-list .list p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.money-image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.Rising{
+    position: relative;
+    margin-top: 4em;
+    width: 75%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+.rising-header{
+    display: flex;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+}
+
+.rising-header h1 span{
+    color: #F0AB00;
+}
+.rising-list{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.rising-list-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.rising-list .list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto';
+}
+.rising-list .list p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.union-image{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 0;
+}
+.union-image-mb{
+    display: none;
+}
+
+/* ----------------Process------------------ */
+.process{
+    width: 100%;
+    height: 100vh auto;
+    background-color: #001435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.process-header{
+    margin-top: 5em;
+    text-align: center;
+}
+.process .process-header h3{
+    font-family: 'Raleway';
+    color: white;
+    font-size: 17px;
+}
+.process .process-header h1{
+    font-family: 'Raleway';
+    color: white;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.process .process-header h1 span{
+    color: #14BBEA;
+    font-weight: 700;
+}
+.process .process-header p{
+    font-family: 'Raleway';
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.process-cards{
+    margin-top: 6em;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ------Card 1------- */
+.process-cards .card1{
+    position: relative;
+    width: 278px;
+    height: 386px;
+    background-color: white;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+.process-cards .card1 .card-container{
+    width: 80%;
+    height: 80%;
+}
+.process-cards .card1 .card-container .polygon{
+    position: absolute;
+    top: 91%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    
+}
+.process-cards .card1 .card-container h1{
+    font-family: 'Raleway';
+    font-size: 34px;
+    font-weight: 800;
+}
+.process-cards .card1 .card-container p{
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+/* -----------Card 2---------- */
+.process-cards .card2{
+    position: relative;
+    width: 278px;
+    height: 386px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+.process-cards .card2 .card-container{
+    width: 80%;
+    height: 80%;
+}
+.process-cards .card2 .card-container .polygon{
+    position: absolute;
+    top: 91%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    
+}
+.process-cards .card2 .card-container h1{
+    font-family: 'Raleway';
+    font-size: 34px;
+    font-weight: 800;
+    color: white;
+}
+.process-cards .card2 .card-container p{
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+
+.process-cards2{
+    margin-left: 9em;
+    margin-top: 3em;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -----------Card 3-------------- */
+.process-cards2 .card3{
+    position: relative;
+    width: 278px;
+    height: 386px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+}
+
+.process-cards2 .card3 .card-container{
+    width: 80%;
+    height: 80%;
+}
+.process-cards2 .card3 .card-container .polygon{
+    position: absolute;
+    top: 10.5%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    
+}
+.process-cards2 .card3 .card-container h1{
+    font-family: 'Raleway';
+    font-size: 34px;
+    font-weight: 800;
+    color: white;
+    margin-top: 3em;
+}
+.process-cards2 .card3 .card-container p{
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #CCCCCC;
+}
+
+/* ------------Card 4--------------- */
+.process-cards2 .card4{
+    position: relative;
+    width: 278px;
+    height: 386px;
+    background-color: white;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+}
+
+.process-cards2 .card4 .card-container{
+    width: 80%;
+    height: 80%;
+    
+}
+.process-cards2 .card4 .card-container .polygon4{
+    position: absolute;
+    top: 10.5%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    
+}
+.process-cards2 .card4 .card-container h1{
+    font-family: 'Raleway';
+    font-size: 34px;
+    font-weight: 800;
+    margin-top: 3em;
+}
+.process-cards2 .card4 .card-container p{
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #CCCCCC;
+    
+}
+
+.process-cards-mb{
+    display: none;
+}
+.process-cards2-mb{
+    display: none;
+}
+/* ---------------Programs------------ */
+.programs{
+    margin-top: 3em;
+    width: 100%;
+    height: 100vh auto;
+    background-color: #001435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.programs-header{
+    margin-top: 8em;
+    text-align: center;
+}
+.programs .programs-header h3{
+    font-family: 'Raleway';
+    color: white;
+    font-size: 17px;
+}
+.programs .programs-header h1{
+    font-family: 'Raleway';
+    color: white;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 400;
+}
+.programs .programs-header h1 span{
+    color: #14BBEA;
+    font-weight: 700;
+}
+
+.program-cards{
+    margin-top: 3em;
+    width: 75%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* ----------Program card 1---------- */
+.program-cards .card1{
+    width: 248px;
+    height: 330px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.program-cards .card1 .card-container{
+    width: 65%;
+    color: white;
+}
+.program-cards .card1 .card-container .box{
+    width: 77px;
+    height: 77px;
+    background-color: #CCCCCC;
+    margin-top: 4em;
+}
+.program-cards .card1 .card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 5em;
+}
+
+/* ----------Program card 2---------- */
+.program-cards .card2{
+    width: 357px;
+    height: 196px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 19px;
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.program-cards .card2 .card-container{
+    width: 75%;
+    color: white;
+}
+.program-cards .card2 .card-container .box{
+    width: 57px;
+    height: 46px;
+    background-color: #CCCCCC;
+    margin-top: 2em;
+}
+.program-cards .card2 .card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 2em;
+    color: black;
+}
+
+.program-cards2{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 1em;
+}
+
+/* -----------Program Card 3------------- */
+.program-cards2 .card3{
+    width: 357px;
+    height: 196px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 19px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.program-cards2 .card3 .card-container{
+    width: 75%;
+    color: white;
+}
+.program-cards2 .card3 .card-container .box{
+    width: 57px;
+    height: 46px;
+    background-color: #CCCCCC;
+    margin-top: 2em;
+}
+.program-cards2 .card3 .card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 2em;
+    color: black;
+}
+
+
+/* -------------Program Card 4------------- */
+.program-cards2 .card4{
+    width: 248px;
+    height: 330px;
+    background-color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.program-cards2 .card4 .card-container{
+    width: 65%;
+    color: white;
+}
+.program-cards2 .card4 .card-container .box{
+    width: 77px;
+    height: 77px;
+    background-color: #CCCCCC;
+    margin-top: 4em;
+}
+.program-cards2 .card4 .card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 5em;
+}
+
+/* -------------Program Card 5------------- */
+.program-cards2 .card5{
+    width: 357px;
+    height: 196px;
+    background-color: white;
+    border-radius: 19px;
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 22px 0px #00000040;
+
+}
+
+.program-cards2 .card5 .card-container{
+    width: 75%;
+    color: white;
+}
+.program-cards2 .card5 .card-container .box{
+    width: 57px;
+    height: 46px;
+    background-color: #CCCCCC;
+    margin-top: 2em;
+}
+.program-cards2 .card5 .card-container h1{
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 2em;
+    color: black;
+}
+
+
+/* ---------------Contact Us------------ */
+
+.contact{
+    background-color: #001435;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.contact-container{
+    width: 87%;
+    height: 384px;
+    background-color: black;
+    margin-top: 9em;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 32px 0px #0000001A;
+
+}
+.contact-info{
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info h2{
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.contact-info h1{
+    font-family: 'Raleway';
+    margin-bottom: 8px;
+}
+.contact-info p{
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    width: 390px;
+    margin: 8px 0px;
+    padding: 10px 10px;
+    background-color: black;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    color: white;
+}
+.form textarea{
+    margin: 8px 0px;
+    padding: 10px 8px;
+    background-color: black;
+    color: white;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+.form button{
+    padding: 10px 0px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #14BBEA 0%, #019FCB 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* ----------------Footer--------------- */
+.footer{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+.footer-container{
+    width: 87%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+.social-icons img{
+    margin-left: 20px;
+}
+
+/* -------------------------Responsive View------------------------ */
+
+@media screen and (max-width: 480px){
+
+/* ----------Navbar---------------- */
+.navbar{
+    width: 100%;
+}
+
+    .navbar .menu{
+        display: flex;
+    }
+    .navbar nav{
+        display: none;
+    }
+
+    .navbar nav{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        right: 0;
+        top: 0;
+        background: #050d1a;
+        min-height: 50vh;
+        margin-right: 0;
+    } 
+    .navbar nav .nav1{
+        width: 100%;
+        display: flex;
+        margin-top: 1em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar nav .nav1 .close{
+        margin-bottom: 1em;
+        display: flex;
+    }
+    .navbar nav .nav1 li{
+        margin-top: 2em;
+        padding-left: 0;
+    }
+    .navbar nav .nav1 button{
+        margin-top: 2em;
+        margin-left: 0;
+    }
+/* -----------Home------------------ */
+    .home-container h2{
+        font-size: 25px;    
+    }
+    .home-container h1{
+        font-size: 50px;
+        color: white;
+    }
+/* -------------About--------------- */
+    .about .about-header p{
+        margin: 2em;
+    }
+    .about h2{
+        margin: 1em 0;
+    }
+    .about-cards{
+        width: 67%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .about-cards .card2{
+        margin: 2em 0;
+    }
+
+/* -----------Services------------- */
+    .services .services-header p{
+        margin: 0 2em;
+    }
+    .service-container{
+        flex-direction: column;
+    }
+    .strategy-header{
+        font-size: 25px;
+    }
+    .service-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .service-card-container{
+        
+        margin-left: 0;
+    }
+    .service-card-container .CR-card{
+        width: 248px;
+        height: 330px;
+        margin-top: 2em;
+    }
+    .service-card-container .GTMA-card{
+        width: 248px;
+        height: 330px;
+        margin-top: 2em;
+    }
+    .service-container2{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .service-container2 .NMOA-card{
+        width: 248px;
+        height: 330px;
+        margin: 2em 0;
+    }
+
+    /* ------------Corporate---------------- */  
+    .corporate-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    .money-image{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    /* ---------------Rising Capital------------- */
+    .Rising{
+        height: 80vh;
+    }
+    .rising-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .rising-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .union-image{
+        display: none;
+    }
+    .union-image-mb {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+/* -------------Process------------ */
+    .process .process-header p{
+        margin: 0 2em;
+    }
+    .process-cards{
+        display: none;
+    }
+    .process-cards2{
+        display: none;
+    }
+    .process-cards-mb{
+        margin-top: 6em;
+        width: 52%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* ------Card 1------- */
+    .process-cards-mb .card1{
+        width: 278px;
+        height: 386px;
+        background-color: white;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 22px 0px #00000040;
+    
+    }
+    .process-cards-mb .card1 .card-container{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .process-cards-mb .card1 .card-container h1{
+        font-family: 'Raleway';
+        font-size: 34px;
+        font-weight: 800;
+    }
+    .process-cards-mb .card1 .card-container p{
+        margin-top: 1em;
+        font-family: 'Open Sans';
+        font-size: 15px;
+        color: #CCCCCC;
+    }
+    
+    /* -----------Card 2---------- */
+    .process-cards-mb .card2{
+        width: 278px;
+        height: 386px;
+        background-color: black;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 22px 0px #00000040;
+        margin-top: 2em;
+    }
+    .process-cards-mb .card2 .card-container{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .process-cards-mb .card2 .card-container h1{
+        font-family: 'Raleway';
+        font-size: 34px;
+        font-weight: 800;
+        color: white;
+    }
+    .process-cards-mb .card2 .card-container p{
+        margin-top: 1em;
+        font-family: 'Open Sans';
+        font-size: 15px;
+        color: #CCCCCC;
+    }
+    
+    
+    .process-cards2-mb{
+        margin-top: 2em;
+        width: 52%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /* -----------Card 3-------------- */
+    .process-cards2-mb .card3{
+        width: 278px;
+        height: 386px;
+        background-color: black;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 22px 0px #00000040;
+    }
+    
+    .process-cards2-mb .card3 .card-container{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .process-cards2-mb .card3 .card-container h1{
+        font-family: 'Raleway';
+        font-size: 34px;
+        font-weight: 800;
+        color: white;
+        margin-top: .7em;
+    }
+    .process-cards2-mb .card3 .card-container p{
+        margin-top: 1em;
+        font-family: 'Open Sans';
+        font-size: 15px;
+        color: #CCCCCC;
+    }
+    
+    /* ------------Card 4--------------- */
+    .process-cards2-mb .card4{
+        position: relative;
+        width: 278px;
+        height: 386px;
+        background-color: white;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 22px 0px #00000040;
+        margin-top: 2em;
+    }
+    
+    .process-cards2-mb .card4 .card-container{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .process-cards2-mb .card4 .card-container h1{
+        font-family: 'Raleway';
+        font-size: 34px;
+        font-weight: 800;
+        margin-top: .7em;
+    }
+    .process-cards2-mb .card4 .card-container p{
+        margin-top: 1em;
+        font-family: 'Open Sans';
+        font-size: 15px;
+        color: #CCCCCC;
+    }       
+
+/* --------------Program-------------- */
+    .program-cards{
+        flex-direction: column;
+    }
+    .program-cards2{
+        flex-direction: column;
+    }
+    .program-cards .card2{
+        width: 248px;
+        height: 330px;
+        margin-left: 0px;
+        margin-top: 2em;
+    }
+    
+    .program-cards2{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0em;
+    }
+    .program-cards2 .card3{
+        width: 248px;
+        height: 330px;
+        margin-left: 0px;
+        margin-top: 2em;
+    }
+    .program-cards2 .card4{
+        margin-top: 2em;
+    }
+    .program-cards2 .card5{
+        width: 248px;
+        height: 330px;     
+        margin-top: 2em;
+    }
+
+    /* ------------Contact--------------- */
+    .contact-container{
+        width: 87%;
+        height: 604px ;
+        background-color: black;
+        margin-top: 9em;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 32px 0px #0000001A;
+    
+    }
+    .contact-info{
+        width: 80%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form{
+        margin-top: 2em;
+    }
+    .form input{
+        width: 250px;
+        margin: 8px 0px;
+        padding: 10px 10px;
+        background-color: black;
+        border: 1px solid #CCCCCC;
+        border-radius: 8px;
+        color: white;
+    }
+    .form textarea{
+        margin: 8px 0px;
+        padding: 10px 8px;
+        background-color: black;
+        color: white;
+        border: 1px solid #CCCCCC;
+        border-radius: 8px;
+    }
+
+/* ------------Footer------------- */
+.footer-container{
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+.social-icons{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.social-icons img{
+    margin-left: 20px;
+}
+    
+}
